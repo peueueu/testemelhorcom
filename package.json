@@ -1,0 +1,16 @@
+{
+  "name": "testemelhorcom",
+  "version": "1.0.0",
+  "description": "Teste de Front-end da Melhor Comunicação",
+  "main": "index.js",
+  "repository": "https://github.com/peueueu/testemelhorcom.git",
+  "author": "Pedro Silva <silvasantospedro91@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css -w",
+    "build:sass": "node-sass --include-path sass sass/style.scss css/style.css --output-style compressed"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

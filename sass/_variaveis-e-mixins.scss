@@ -1,0 +1,43 @@
+//Cores
+
+$bege-claro: #edece4;
+$bege-medio: #cbc6b9;
+$cinza: #2a2426;
+$bege-escuro: #988c77;
+$verde: #2ce877;
+
+// Fontes
+$font-1: "Noto Sans", sans-serif;
+
+@function em($pixel, $context: 16) {
+  @return $pixel / $context + em;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+// Mixins de media-querie
+//Variaveis de media-querie
+
+$l-device: 1200px;
+$m-device: 760px;
+$s-device: 480px;
+
+@mixin d($size) {
+  @if $size == l {
+    @media screen and (min-width: #{$l-device}) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device - 1}) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: #{$m-device - 1}) {
+      @content;
+    }
+  }
+}
