@@ -1,38 +1,23 @@
-$(document).ready(() => {
-  $('.slick').slick({
-    centerMode: false,
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
+$(document).ready(function () {
+  var owl = $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    singleItem: true,
+    dotsContainer: '.test',
+    responsive: {
+      0: {
+        items: 1,
       },
-      {
-        breakpoint: 1008,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      600: {
+        items: 1,
       },
-      {
-        breakpoint: 800,
-        settings: "unslick"
+      1000: {
+        items: 1,
+        loop: true
       }
-
-    ]
-  });
-  $(window).resize(function () {
-    $('.slick').not('.slick-initialized').slick('resize');
+    }
   });
 
-  $(window).on('orientationchange', function () {
-    $('.slick').not('.slick-initialized').slick('resize');
-  });
-})
+  $('.team_location').click(function () { owl.trigger('to.owl.carousel', [$(this).index(), 300]); });
+});

@@ -18,18 +18,29 @@
   flex-grow: 0;
 }
 
-.navigation_list {
+.navigation_list,
+.social_media_list {
   align-items: center;
+}
+
+.social_media_item {
+  fill: $branco;
+  &:hover {
+    fill: $ciano-escuro;
+  }
 }
 
 .navigation_list li a {
   color: $branco !important;
   font-weight: bold;
+  &:hover {
+    color: $ciano-escuro !important;
+  }
 }
 
 .quebra {
   background-image: url("/img/bg-quebra.png");
-  width: 100%;
+  max-width: 100%;
   height: 600px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -38,7 +49,7 @@
   .quebra_text {
     position: absolute;
     top: 25%;
-    left: 13%;
+    left: 22%;
     p {
       color: $branco;
       font-size: 4.5rem;
