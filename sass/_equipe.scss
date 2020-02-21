@@ -44,16 +44,6 @@
   position: relative;
 }
 
-.owl-dots {
-  position: absolute;
-  top: -40px;
-  left: 45%;
-  margin-top: 0;
-}
-
-.owl-dots > .owl-dot > span {
-  @include btn_default($amarelo-claro, 10px, 1rem);
-}
 
 .team_card {
   width: auto !important;
@@ -85,7 +75,7 @@
 }
 
 .equipe_title_container {
-  margin-bottom: 160px;
+  margin-bottom: 110px;
 }
 
 .equipe_title {

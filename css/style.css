@@ -167,26 +167,6 @@ html {
   padding-top: 90px;
   position: relative; }
 
-.owl-dots {
-  position: absolute;
-  top: -40px;
-  left: 45%;
-  margin-top: 0; }
-
-.owl-dots > .owl-dot > span {
-  color: #ffe8af;
-  background-color: transparent;
-  background-image: none;
-  border: 2px solid #ffe8af;
-  border-radius: none;
-  padding: 10px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: bold; }
-  .owl-dots > .owl-dot > span:hover {
-    background-color: rgba(255, 232, 175, 0.25);
-    color: #ffe8af; }
-
 .team_card {
   width: auto !important;
   background: #ffffff;
@@ -213,7 +193,7 @@ html {
   color: #858585; }
 
 .equipe_title_container {
-  margin-bottom: 160px; }
+  margin-bottom: 110px; }
 
 .equipe_title {
   font-size: 2.85rem;
