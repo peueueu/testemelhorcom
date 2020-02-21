@@ -48,17 +48,17 @@ $s-device: 480px;
 }
 
 @mixin btn_default($color, $padding: 10px, $fontSize: 1rem) {
-  color: $color;
-  background-color: transparent;
-  background-image: none;
-  border: 2px solid $color;
-  border-radius: none;
-  padding: $padding;
-  font-size: $fontSize;
-  text-transform: uppercase;
-  font-weight: bold;
+  color: $color !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 2px solid $color !important;
+  border-radius: none !important;
+  padding: $padding !important;
+  font-size: $fontSize !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
   &:hover {
-    background-color: rgba($color, 0.25);
-    color: $color;
+    background-color: rgba($color, 0.25) !important;
+    color: $color !important;
   }
 }

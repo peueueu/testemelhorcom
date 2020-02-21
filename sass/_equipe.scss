@@ -55,6 +55,11 @@
   }
 }
 
+.team_location > a{
+ @include btn_default($amarelo-claro, 10px, 1.25rem);
+ margin-right: 15px;
+}
+
 .team_card_content {
   height: 100px;
   display: flex;

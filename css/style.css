@@ -176,6 +176,21 @@ html {
       display: inline-block !important;
       margin: 0 20px 20px 0; } }
 
+.team_location > a {
+  color: #ffe8af !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 2px solid #ffe8af !important;
+  border-radius: none !important;
+  padding: 10px !important;
+  font-size: 1.25rem !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  margin-right: 15px; }
+  .team_location > a:hover {
+    background-color: rgba(255, 232, 175, 0.25) !important;
+    color: #ffe8af !important; }
+
 .team_card_content {
   height: 100px;
   display: flex;
