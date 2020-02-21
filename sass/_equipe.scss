@@ -6,10 +6,11 @@
     content: "";
     display: block;
     position: absolute;
-    width: 120px;
+    width: 130px;
     height: 178px;
     top: 7%;
-    left: 93.7%;
+    left: 89.7%;
+    box-sizing: border-box;
     background: url("../img/detalhe-equipe.svg");
     background-repeat: no-repeat;
     overflow: hidden;
@@ -17,8 +18,7 @@
       display: none;
     }
     @include d(m) {
-      left: 88.3%;
-      overflow: hidden;
+      display: none;
     }
   }
 }
