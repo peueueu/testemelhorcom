@@ -5,7 +5,13 @@
 #header > .container {
   display: flex;
   align-items: center;
-  height: 184px;
+  height: 180px;
+  @include d(s) {
+    height: auto;
+  }
+  @include d(m) {
+    height: auto;
+  }
 }
 
 .header_nav {
@@ -15,7 +21,53 @@
 }
 
 .navigation_list_container {
-  flex-grow: 0;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  @include d(s) {
+    margin-top: 20px;
+  }
+  @include d(m) {
+    margin-top: 20px;
+  }
+}
+
+.navbar_toggler_container {
+  @include d(s) {
+    display: flex;
+    .navbar-brand {
+      order: 2;
+    }
+  }
+  @include d(m) {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .navbar-brand {
+      order: 2;
+    }
+  }
+}
+
+.navbar-toggler {
+  @include d(s) {
+    order: 1;
+    margin-right: 30px;
+    border: none;
+    span {
+      border: none;
+      padding: 18px;
+    }
+  }
+
+  @include d(m) {
+    order: 1;
+    margin-right: 30px;
+    border: none;
+    span {
+      border: none;
+      padding: 18px;
+    }
+  }
 }
 
 .navigation_list,
@@ -23,15 +75,38 @@
   align-items: center;
 }
 
+.social_media_list {
+  @include d(s) {
+    flex-direction: row !important;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+  }
+  @include d(m) {
+    display: flex !important;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .social_media_item {
   fill: $branco;
   &:hover {
     fill: $ciano-escuro;
   }
+  @include d(s) {
+    margin-right: 10px;
+  }
+  @include d(m) {
+    margin-right: 10px;
+  }
 }
 
 .navigation_list li a {
   color: $branco !important;
+  text-transform: uppercase;
   font-weight: bold;
   &:hover {
     color: $ciano-escuro !important;
@@ -39,7 +114,8 @@
 }
 
 .quebra {
-  background-image: url("/img/bg-quebra.png");
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.65)), url("/img/bg-quebra.png");
+  transform: matrix(1, 0, 0, 1, 0, 0);
   max-width: 100%;
   height: 600px;
   background-repeat: no-repeat;
@@ -54,6 +130,9 @@
       color: $branco;
       font-size: 4.5rem;
       font-weight: bold;
+      @include d(s) {
+        font-size: 3rem;
+      }
     }
   }
 }

@@ -12,24 +12,16 @@
     left: 93.7%;
     background: url("/img/Caminho\ 147.svg");
     background-repeat: no-repeat;
+    overflow: hidden;
     @include d(s) {
       display: none;
     }
     @include d(m) {
-      left: 84.3%;
+      left: 88.3%;
+      overflow: hidden;
     }
   }
 }
-
-// .slick-slider {
-//   margin: 0 -15px;
-// }
-// .slick-slide {
-//   // padding: 10px;
-//   text-align: center;
-//   margin-right: 15px;
-//   margin-left: 90px;
-// }
 
 #oslo,
 #recife,
@@ -37,27 +29,48 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  @include d(s) {
+    flex-direction: column;
+  }
 }
 
 .owl-carousel {
   padding-top: 90px;
   position: relative;
+  @include d(s) {
+    padding-top: 30px;
+  }
 }
-
 
 .team_card {
   width: auto !important;
   background: $branco;
   margin-right: 20px;
+  @include d(s) {
+    margin: 0 20px 20px 20px;
+  }
   @include d(m) {
     display: inline-block !important;
     margin: 0 20px 20px 0;
   }
 }
 
-.team_location > a{
- @include btn_default($amarelo-claro, 10px, 1.25rem);
- margin-right: 15px;
+.team_location {
+  cursor: pointer;
+}
+
+.team_location > a {
+  @include btn_default($amarelo-claro, 10px, 1.25rem);
+  margin-right: 15px;
+  @include d(s) {
+    margin-right: 10px !important;
+    padding: 5px !important;
+    font-size: 1rem !important;
+  }
+}
+
+.team_location.active > a {
+  background-color: rgba($amarelo-claro, 0.25) !important;
 }
 
 .team_card_content {

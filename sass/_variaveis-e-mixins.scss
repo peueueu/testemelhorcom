@@ -14,16 +14,6 @@ $amarelo-claro: #ffe8af;
 // Fontes
 $font: "Noto Sans", sans-serif;
 
-@function em($pixel, $context: 16) {
-  @return $pixel / $context + em;
-}
-
-@mixin box-shadow($shadow...) {
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  box-shadow: $shadow;
-}
-
 // Mixins de media-querie
 //Variaveis de media-querie
 

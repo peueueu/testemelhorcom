@@ -16,8 +16,8 @@
 <body>
   <header id="header">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light header_nav">
-        <div>
+      <nav class="navbar navbar-expand-lg navbar-dark header_nav">
+        <div class="navbar_toggler_container">
           <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="spyria logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
         </div>
 
         <div class="collapse navbar-collapse navigation_list_container" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto navigation_list">
+          <ul class="navbar-nav navigation_list">
             <li class="nav-item">
               <a class="nav-link" href="#sobre">Quem somos</a>
             </li>
@@ -37,10 +37,7 @@
               <a class="nav-link" href="#contato">Contato</a>
             </li>
           </ul>
-        </div>
-
-        <div class="social-media">
-          <ul class="navbar-nav mr-auto social_media_list">
+          <ul class="navbar-nav social_media_list">
             <li class="nav-item">
               <a class="nav-link" href="#"><svg class="social_media_item" xmlns="http://www.w3.org/2000/svg"
                   width="10.616" height="21.015" viewBox="0 0 10.616 21.015">
@@ -70,7 +67,6 @@
                       transform="translate(0 -48)" />
                   </g>
                 </svg></a>
-            </li>
           </ul>
         </div>
       </nav>
@@ -90,7 +86,7 @@
     <section id="sobre">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 d-flex align-items-center">
+          <div class="col-lg-12 d-md-flex align-items-center">
             <div class="col-lg-5">
               <img src="/img/sobre.png" alt="" class="img-fluid">
             </div>
@@ -118,7 +114,7 @@
           <div class="col-lg-12">
             <div class="team_group">
               <ul class="test d-flex justify-content-center">
-                <li class="team_location active" data="0"><a class="btn_spyria">Nova York</a></li>
+                <li class="team_location" data="0"><a class="btn_spyria">Nova Iorque</a></li>
                 <li class="team_location" data="1"><a class="btn_spyria">Oslo</a></li>
                 <li class="team_location" data="2"><a class="btn_spyria">Recife</a></li>
               </ul>
@@ -260,7 +256,7 @@
     <section id="contato">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 d-flex align-items-center">
+          <div class="col-lg-12 d-md-flex align-items-center">
             <div class="col-lg-7 mr-5">
               <h1 class="contato_title">Se interessou pelos nossos serviços? Manda uma mensagem pra gente. :)</h1>
               <form class="form_contato">
@@ -300,7 +296,39 @@
       </div>
     </section>
   </main>
-  <footer>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 d-md-flex justify-content-between align-items-center mb-3">
+          <div class="col-lg-5 footer_logo">
+            <img src="img/logo-footer.svg" alt="Logo">
+          </div>
+          <div class="col-lg-3">
+            <div class="footer_info_bold d-flex align-items-center">
+              <span class="footer_tel_icon"></span>
+              <p>+55 (87) 3312.4057</p>
+            </div>
+            <div class="footer_info_bold d-flex align-items-center">
+              <span class="footer_email_icon mt-2"></span>
+              <p>contato@spyria.com.br</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer_info d-flex">
+              <span class="footer_address_icon mr-2"></span>
+              <p>Av. das Libélulas, 1228. Campos de Jordão. Petrolina - PE. 54.457-092</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center copy">
+          <p>Spyria Housing - Copyright 2019 © Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
 

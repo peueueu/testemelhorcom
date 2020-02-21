@@ -1,2 +1,61 @@
-footer {
+#footer {
+  padding-top: 100px;
+  background: $cinza-bg;
+}
+
+.copy {
+  padding: 10px;
+  border-top: 1px solid $cinza-cobertura;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: $cinza-copyright;
+}
+
+.footer_address_icon {
+  background: url("/img/location.svg");
+  width: 20px;
+  background-repeat: no-repeat;
+  height: 15px;
+  display: inline-block;
+}
+
+.footer_tel_icon {
+  background: url("/img/tel.svg");
+  width: 20px;
+  background-repeat: no-repeat;
+  height: 15px;
+  display: inline-block;
+}
+
+.footer_email_icon {
+  background: url("/img/mail.svg");
+  width: 20px;
+  background-repeat: no-repeat;
+  height: 15px;
+  display: inline-block;
+}
+
+.footer_logo {
+  @include d(s) {
+    margin-bottom: 30px;
+  }
+}
+
+.footer_info {
+  font-size: 1.25rem;
+  color: $cinza-endereco;
+  @include d(s) {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
+
+.footer_info_bold {
+  font-size: 1.25rem;
+  color: $cinza-endereco;
+  font-weight: bold;
+  @include d(s) {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
 }

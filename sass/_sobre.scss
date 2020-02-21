@@ -18,6 +18,9 @@
     position: absolute;
     background: $amarelo;
   }
+  @include d(s) {
+    margin-top: 30px;
+  }
 }
 
 .sobre_text {
