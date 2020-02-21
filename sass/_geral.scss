@@ -1,0 +1,90 @@
+html {
+  font-size: 14px;
+  font-family: $font;
+}
+
+#equipe {
+  padding: 75px 0;
+  background: $ciano-claro;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 178px;
+    top: 7%;
+    left: 93.7%;
+    background: url("/img/Caminho\ 147.svg");
+    background-repeat: no-repeat;
+    @include d(s) {
+      display: none;
+    }
+    @include d(m) {
+      left: 84.3%;
+    }
+  }
+}
+
+.slick-slider {
+  margin: 0 -15px;
+}
+.slick-slide {
+  // padding: 10px;
+  background-color: red;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 81px;
+}
+
+.slick {
+  @include d(m) {
+    text-align: center;
+  }
+}
+
+.team_card {
+  width: auto !important;
+  background: $branco;
+  @include d(m) {
+    display: inline-block !important;
+    margin: 0 20px 20px 0;
+  }
+}
+
+.team_card_content {
+  height: 80px;
+}
+
+.team_card_title {
+  margin-top: 20px;
+  color: $ciano-escuro;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.team_card_contact {
+  margin-top: 10px !important;
+  color: $cinza-placeholder;
+}
+
+.equipe_title_container {
+  margin-bottom: 160px;
+}
+
+.equipe_title {
+  font-size: 2.85rem;
+  font-weight: bold;
+  color: $branco;
+  position: relative;
+  padding-bottom: 15px;
+  &::after {
+    content: "";
+    height: 2px;
+    width: 97px;
+    top: 100%;
+    display: block;
+    position: absolute;
+    background: $amarelo;
+  }
+}

@@ -45,20 +45,235 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-footer {
-  padding: 20px 0;
-  background: #2a2426;
-  -webkit-box-shadow: 0 0 0 10px #2a2426;
-  -moz-box-shadow: 0 0 0 10px #2a2426;
-  box-shadow: 0 0 0 10px #2a2426; }
-  footer p {
-    color: #edece4; }
+html {
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif; }
+
+#equipe {
+  padding: 75px 0;
+  background: #24bec6;
+  position: relative; }
+  #equipe::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 178px;
+    top: 7%;
+    left: 93.7%;
+    background: url("/img/Caminho 147.svg");
+    background-repeat: no-repeat; }
     @media screen and (max-width: 759px) {
-      footer p {
-        text-align: center; } }
-  footer a img {
-    float: right; }
-    @media screen and (max-width: 759px) {
-      footer a img {
-        float: none;
-        margin: 20px auto; } }
+      #equipe::after {
+        display: none; } }
+    @media screen and (min-width: 760px) and (max-width: 1199px) {
+      #equipe::after {
+        left: 84.3%; } }
+
+.slick-slider {
+  margin: 0 -15px; }
+
+.slick-slide {
+  background-color: red;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 81px; }
+
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .slick {
+    text-align: center; } }
+
+.team_card {
+  width: auto !important;
+  background: #ffffff; }
+  @media screen and (min-width: 760px) and (max-width: 1199px) {
+    .team_card {
+      display: inline-block !important;
+      margin: 0 20px 20px 0; } }
+
+.team_card_content {
+  height: 80px; }
+
+.team_card_title {
+  margin-top: 20px;
+  color: #078c92;
+  font-weight: bold;
+  font-size: 1rem; }
+
+.team_card_contact {
+  margin-top: 10px !important;
+  color: #858585; }
+
+.equipe_title_container {
+  margin-bottom: 160px; }
+
+.equipe_title {
+  font-size: 2.85rem;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 15px; }
+  .equipe_title::after {
+    content: "";
+    height: 2px;
+    width: 97px;
+    top: 100%;
+    display: block;
+    position: absolute;
+    background: #f9ca55; }
+
+#header {
+  background: #24bec6; }
+
+#header > .container {
+  display: flex;
+  align-items: center;
+  height: 184px; }
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.navigation_list_container {
+  flex-grow: 0; }
+
+.navigation_list {
+  align-items: center; }
+
+.navigation_list li a {
+  color: #ffffff !important;
+  font-weight: bold; }
+
+.quebra {
+  background-image: url("/img/bg-quebra.png");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative; }
+  .quebra .quebra_text {
+    position: absolute;
+    top: 25%;
+    left: 13%; }
+    .quebra .quebra_text p {
+      color: #ffffff;
+      font-size: 4.5rem;
+      font-weight: bold; }
+
+.btn_spyria {
+  color: #ffe8af;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #ffe8af;
+  border-radius: none;
+  padding: 10px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn_spyria:hover {
+    background-color: rgba(255, 232, 175, 0.25);
+    color: #ffe8af; }
+
+#sobre {
+  padding: 75px 0;
+  background: #efefef; }
+
+.sobre_title {
+  font-size: 2.85rem;
+  font-weight: bold;
+  color: #5b5b5b;
+  position: relative;
+  padding-bottom: 15px; }
+  .sobre_title::after {
+    content: "";
+    height: 2px;
+    width: 97px;
+    top: 100%;
+    display: block;
+    position: absolute;
+    background: #f9ca55; }
+
+.sobre_text {
+  margin-top: 35px;
+  color: #5b5b5b;
+  line-height: 2.2; }
+
+#contato {
+  padding-top: 82px !important;
+  background: #efefef; }
+
+.contato_title {
+  font-size: 3rem;
+  color: #858585;
+  margin-bottom: 20px; }
+
+.form_contato label {
+  display: block;
+  font-weight: bold;
+  color: #858585; }
+
+.form_contato input[type="text"],
+.form_contato textarea {
+  color: #858585;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  border: 2px solid #c8c8c8;
+  background: transparent; }
+  .form_contato input[type="text"]:hover, .form_contato input[type="text"]:focus,
+  .form_contato textarea:hover,
+  .form_contato textarea:focus {
+    outline: none;
+    border-color: #24bec6; }
+
+.form_contato ::placeholder {
+  font-weight: 300;
+  font-style: italic;
+  color: #858585; }
+
+.form_contato textarea {
+  height: 120px; }
+
+.form_contato > .btn_spyria {
+  color: #24bec6;
+  border: 2px solid #24bec6;
+  padding: 7px 10px 7px 10px;
+  margin-bottom: 35px;
+  font-size: 1rem; }
+  .form_contato > .btn_spyria:hover {
+    background-color: rgba(36, 190, 198, 0.25);
+    color: #24bec6; }
+
+.location_container {
+  background: #24bec6; }
+
+.location_container h1 {
+  font-size: 1.85rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.location_address {
+  margin-top: 10px;
+  margin-bottom: 13.5px; }
+  .location_address p {
+    color: white;
+    position: relative; }
+  .location_address span {
+    background: url("/img/location.svg");
+    width: 12px;
+    height: 15px;
+    display: inline-block; }
+
+.location_container > .btn_spyria {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 7px 15px 7px 15px;
+  margin-bottom: 35px;
+  font-size: 1rem; }
+  .location_container > .btn_spyria:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff; }

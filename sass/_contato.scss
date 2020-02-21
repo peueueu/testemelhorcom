@@ -1,15 +1,91 @@
-.contato {
+#contato {
+  padding-top: 82px !important;
+  background: $cinza-bg;
 }
 
-.contato form {
+.contato_title {
+  font-size: 3rem;
+  color: $cinza-placeholder;
+  margin-bottom: 20px;
 }
 
-
-input.button {
+.form_contato {
+  label {
+    display: block;
+    font-weight: bold;
+    color: $cinza-placeholder;
+  }
+  input[type="text"],
+  textarea {
+    color: $cinza-placeholder;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid $cinza-cobertura;
+    background: transparent;
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $ciano-claro;
+    }
+  }
+  ::placeholder {
+    font-weight: 300;
+    font-style: italic;
+    color: $cinza-placeholder;
+  }
+  textarea {
+    height: 120px;
+  }
 }
 
-.contato-info {
+.form_contato > .btn_spyria {
+  color: $ciano-claro;
+  border: 2px solid $ciano-claro;
+  padding: 7px 10px 7px 10px;
+  margin-bottom: 35px;
+  font-size: 1rem;
+  &:hover {
+    background-color: rgba($ciano-claro, 0.25);
+    color: $ciano-claro;
+  }
 }
 
-.contato-mapa {
+.location_container {
+  background: $ciano-claro;
+}
+
+.location_container h1 {
+  font-size: 1.85rem;
+  font-weight: bold;
+  color: $branco;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.location_address {
+  margin-top: 10px;
+  margin-bottom: 13.5px;
+  p {
+    color: white;
+    position: relative;
+  }
+  span {
+    background: url("/img/location.svg");
+    width: 12px;
+    height: 15px;
+    display: inline-block;
+  }
+}
+
+.location_container > .btn_spyria {
+  color: $branco;
+  border: 2px solid $branco;
+  padding: 7px 15px 7px 15px;
+  margin-bottom: 35px;
+  font-size: 1rem;
+  &:hover {
+    background-color: rgba($branco, 0.25);
+    color: $branco;
+  }
 }

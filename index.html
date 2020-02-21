@@ -5,11 +5,281 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spyria</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+  <header id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light header_nav">
+        <div>
+          <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="spyria logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse navigation_list_container" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto navigation_list">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media">
+          <ul class="navbar-nav mr-auto navigation_list">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><img src="/img/facebook-logo.svg" alt="Facebook"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="/img/instagram-logo.svg" alt="Instagram"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="/img/twitter-logo.svg" alt="Twitter"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+    <div class="quebra">
+      <div class="quebra_text">
+        <p>Simples.</p>
+        <p>Sofisticado.</p>
+        <p>Todo seu.</p>
+        <a href="#" class="btn btn_spyria mt-4">Conheça nosso time</a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex align-items-center">
+            <div class="col-lg-5">
+              <img src="/img/sobre.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="sobre_title">Sobre a Spyria</h1>
+              <p class="sobre_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Phasellus at vulputate augue. Suspendisse placerat dui
+                sit amet enim sodales luctus. Donec neque mauris, pretium sed maximus pretium, elementum non tellus.
+                Nulla id velit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 equipe_title_container">
+            <h1 class="equipe_title">Nosso Time</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="slick">
+              <div class="team_card">
+                <div class="team_card_img">
+                  <img src="/img/team-1.png" alt="">
+                </div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>ADONIS SILVA</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 9250.4502</p>
+                    <p>adonis@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-3.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>CLARA SOUZA</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 9944.8112</p>
+                    <p>clara@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-2.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>DÊNIS TENÓRIO</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 8801.0174</p>
+                    <p>denis@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-4.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>DOUGLAS MURT</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 9250.4502</p>
+                    <p>douglas@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-5.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>DANIEL DARLIE</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 9944.8112</p>
+                    <p>daniel@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-6.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>OLIVIA MORNA</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 8801.0174</p>
+                    <p>olivia@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-7.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>CLARISE DESIRÉ</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 8801.0174</p>
+                    <p>clarise@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-8.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>JAMMIL GOULHENGR</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 9250.4502</p>
+                    <p>jammil@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team_card">
+                <div class="team_card_img"><img src="/img/team-9.png" alt=""></div>
+                <div class="team_card_content">
+                  <div class="team_card_title">
+                    <h3>CARRIE DANNING</h3>
+                  </div>
+                  <div class="team_card_contact">
+                    <p>+55 81 9 9944.8112</p>
+                    <p>carrie@spyria.com.br</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex align-items-center">
+            <div class="col-lg-7 mr-5">
+              <h1 class="contato_title">Se interessou pelos nossos serviços? Manda uma mensagem pra gente. :)</h1>
+              <form class="form_contato">
+                <div class="mb-3">
+                  <label class="mb-2" for="nome">Nome</label>
+                  <input type="text" placeholder="Ex.: Renata Lopes">
+                </div>
+                <div class="mb-3">
+                  <label class="mb-2" for="email">Email</label>
+                  <input type="text" placeholder="exemplo@exemplo.com.br">
+                </div>
+                <div class="mb-3">
+                  <label class="mb-2" for="telefone">Telefone</label>
+                  <input type="text" placeholder="(xx) x xxxx.xxxx">
+                </div class="mb-3">
+                <div class="mb-3">
+                  <label class="mb-2" for="msg">Mensagem</label>
+                  <textarea placeholder="exemplo@exemplo.com.br"></textarea>
+                </div>
+                <input class="btn btn_spyria" type="button" value="Enviar">
+              </form>
+            </div>
+            <div class="col-lg-4 location_container">
+              <h1>Você também pode nos fazer uma visita.</h1>
+              <div class="location_img_container">
+                <img class="img-fluid" src="img/MarsHill-HS-6276@2x.png" alt="">
+              </div>
+              <div class="location_address d-flex">
+                <span class="location_icon mr-1"></span>
+                <p>R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Petrolina. - PE.</p>
+              </div>
+              <a href="#" class="btn btn_spyria">Traçar Rota</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
 </body>
 
 </html>

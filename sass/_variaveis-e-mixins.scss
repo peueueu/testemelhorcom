@@ -1,13 +1,18 @@
 //Cores
-
-$bege-claro: #edece4;
-$bege-medio: #cbc6b9;
-$cinza: #2a2426;
-$bege-escuro: #988c77;
-$verde: #2ce877;
+$cinza-cobertura: #c8c8c8;
+$cinza-endereco: #707070;
+$cinza-placeholder: #858585;
+$cinza-copyright: #5b5b5b;
+$cinza-cardborder: #00000029;
+$cinza-bg: #efefef;
+$branco: #ffffff;
+$ciano-claro: #24bec6;
+$ciano-escuro: #078c92;
+$amarelo: #f9ca55;
+$amarelo-claro: #ffe8af;
 
 // Fontes
-$font-1: "Noto Sans", sans-serif;
+$font: "Noto Sans", sans-serif;
 
 @function em($pixel, $context: 16) {
   @return $pixel / $context + em;

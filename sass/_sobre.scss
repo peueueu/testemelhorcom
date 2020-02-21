@@ -1,0 +1,27 @@
+#sobre {
+  padding: 75px 0;
+  background: $cinza-bg;
+}
+
+.sobre_title {
+  font-size: 2.85rem;
+  font-weight: bold;
+  color: $cinza-copyright;
+  position: relative;
+  padding-bottom: 15px;
+  &::after {
+    content: "";
+    height: 2px;
+    width: 97px;
+    top: 100%;
+    display: block;
+    position: absolute;
+    background: $amarelo;
+  }
+}
+
+.sobre_text {
+  margin-top: 35px;
+  color: $cinza-copyright;
+  line-height: 2.2;
+}
