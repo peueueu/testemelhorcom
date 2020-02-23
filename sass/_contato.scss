@@ -7,6 +7,7 @@
   font-size: 2.5rem;
   color: $cinza-placeholder;
   margin-bottom: 20px;
+  line-height: 40px;
 }
 
 .form_contato {
@@ -53,6 +54,9 @@
 
 .location_container {
   background: $ciano-claro;
+  @include d(s) {
+    padding-top: 10px;
+  }
 }
 
 .location_container h1 {

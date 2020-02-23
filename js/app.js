@@ -21,7 +21,7 @@ $(document).ready(function () {
 
   $('.team_location').click(function () { owl.trigger('to.owl.carousel', [$(this).index(), 300]); });
 
-  $('.navigation_list a[href^="#"]').on('click', function(e) {
+  $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top;
